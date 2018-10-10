@@ -7,7 +7,16 @@
     <title>Document</title>
 </head>
 <body>
+    <script>
+        function handleClick()
+        {
+            var h2 = document.getElementById("podnaslov");
+            console.log('clicked');
+            h2.innerHTML = "You've clicked the button!";
+        }
+    </script>
     <h1>Playing around with HTML basics</h1>
-        <h2>Hello world!</h2>
+    <h2 id="podnaslov">Hello world!</h2>
+    <button onclick="handleClick()">Click me!</button>
 </body>
 </html>
